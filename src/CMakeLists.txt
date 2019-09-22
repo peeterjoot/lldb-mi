@@ -74,4 +74,4 @@ add_executable(lldb-mi
   MIUtilVariant.cpp
 )
 
-target_link_libraries(lldb-mi lldb LLVM pthread)
+target_link_libraries(lldb-mi lldb `llvm-config --libs` pthread)
